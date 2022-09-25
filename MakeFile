@@ -1,0 +1,13 @@
+Artem12.exe: Artem12.o Test12.o
+	wg++ -o Artem12.exe Artem12.o Test12.o 
+
+Artem12.o: Artem12.cpp 
+	wg++ -c Artem12.cpp 
+
+Test12.o: Test12.cpp 
+	wg++ -c Test12.cpp 
+
+c:
+	del Artem12.exe Artem12.o Test12.o
+	
+r:	c Artem12.exe 
